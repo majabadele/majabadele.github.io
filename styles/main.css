@@ -5,8 +5,7 @@ body {
     line-height: 32px;
     font-family: sans-serif;
     color: white;
-    text-align: center;
-}
+    }
 
 h1 {
     font-size: 2rem;
@@ -43,7 +42,7 @@ header, footer, footer a {
 
 header img {
     width: 200px;
-    height: auto;
+    height: 200px;
     float: right;
 }
 
