@@ -30,6 +30,7 @@ header, main, footer {
     padding: .3rem;
     max-width: 60px;
     max-height: 40px;
+    align-content: center;
 }
 
 header, footer, footer a {
