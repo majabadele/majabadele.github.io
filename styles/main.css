@@ -28,8 +28,8 @@ li {
 header, main, footer {
     margin: .1rem;
     padding: .3rem;
-    max-width: 1500px;
-    max-height: 40px;
+    max-width: 150px;
+    max-height: 100px;
     align-content: center;
 }
 
@@ -41,7 +41,7 @@ header, footer, footer a {
 
 header img {
     width: 256px;
-    height: 323px;
+    height: 75px;
     float: right;
 }
 
