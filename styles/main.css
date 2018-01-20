@@ -9,7 +9,7 @@ body {
 
 h1 {
     font-size: 2rem;
-        color: black;
+    color: black;
     text-align: center;
 }
 
@@ -20,11 +20,7 @@ h2 {
     border-bottom: 1px solid #bbb;
 }
 
-li {
-    font-size: 1rem;
-    color: blue;
-    text-align: center;
-}
+
 
 header, main, footer {
     margin: 1.25rem auto;
