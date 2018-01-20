@@ -28,7 +28,7 @@ li {
 header, main, footer {
     margin: .1rem;
     padding: .3rem;
-    max-width: 600px;
+    max-width: 400px;
 }
 
 header, footer, footer a {
