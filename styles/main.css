@@ -1,4 +1,4 @@
-{ margin: 5.2rem; box-sizing: border-box;} 
+{ margin: .2rem; box-sizing: border-box;} 
 
 body { 
     font-size: 16px; 
@@ -38,7 +38,7 @@ header, footer, footer a {
 
 header img {
     width: 256px;
-    height: 223px;
+    height: 323px;
     float: right;
 }
 
