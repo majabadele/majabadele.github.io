@@ -28,8 +28,8 @@ li {
 }
 
 header, main, footer {
-    margin: .1rem;
-    padding: .3rem;
+    margin: 1.25rem;
+    padding: .5rem;
     max-width: 800px;
     max-height: 400px;
     align-content: center;
