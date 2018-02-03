@@ -21,12 +21,9 @@ h2 {
 li {
     font-size: 1rem;
     color: blue;
-    text-align: center;
+    text-align: left;
 }
 
-main{ 
-    padding-left: 
-}
 header, main, footer {
     margin: 1.25rem auto;
     padding: .5rem;
