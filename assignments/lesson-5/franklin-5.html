@@ -24,13 +24,12 @@
 
     <header>
         <img src="images/logo.png" alt="The site logo" width="200px" height="auto">
-        <h1>FGS WEATHER FORECAST</h1>
-        <div class="subheading">The most accurate weather forecast</div>
+        <h1>Franklin City</h1>
+        <div class="subheading"></div>
     </header>
 
     <!-- site navigation use placeholder references -->
     <nav>
-        <button onclick="toggleNavMenu()">&#9776;</button>
         <ul>
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
@@ -44,66 +43,56 @@
     <main>
         <h2>The City of Franklin</h2>
         <figure>
-            <img src="images/franklincity.jpg" height="100%" width="50%">
+            <img src="images/franklincity.jpg" height="180" width="auto">
         </figure>
-        <section>
-            <h3>Weather Summary</h3>
-            <div class="highlow">
-                <p>High:</p>
-                <p>Low:</p>
-            </div>
-            <div class="current">
-                Sunny
-                <picture>
-                    <img src="images/sunnyday.jpeg" alt="" width="auto" height="150px">
-                </picture>
-            </div>
-            <div class="conditions">
-                <p>Precipitation:</p>
-                <p>Wind Speed:</p>
-            </div>
-        </section>
+        <h3>Weather Summary</h3>
+        <div class="highlow">
+            <ul>
+                <li> Summary: Sunny</li>
+                <li> High: 80 ℉</li>
+                <li> Low: 65 ℉</li>
+                <li> Precipitation: 0 in.</li>
+                <li> Max Wind: 10 mpw W</li>
+            </ul>
+        </div>
 
         <section class="forecast">
-            <h3>10 Day Forecast</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day 1</th>
-                        <th>Day 2</th>
-                        <th>Day 3</th>
-                        <th>Day 4</th>
-                        <th>Day 5</th>
-                        <th>Day 6</th>
-                        <th>Day 7</th>
-                        <th>Day 8</th>
-                        <th>Day 9</th>
-                        <th>Day 10</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>72&deg;F</td>
-                        <td>79&deg;F</td>
-                        <td>83&deg;F</td>
-                        <td>85&deg;F</td>
-                        <td>89&deg;F</td>
-                    </tr>
-                </tbody>
-            </table>
+            <tbody>
+                <tr>
+                    <th>Day1</th>&#124;
+                    <th>Day2</th>&#124;
+                    <th>Day3</th>&#124;
+                    <th>Day4</th>&#124;
+                    <th>Day5</th>&#124;
+                    <th>Day6</th>&#124;
+                    <th>Day7</th>&#124;
+                    <th>Day8</th>&#124;
+                    <th>Day9</th>&#124;
+                    <th>Day10</th>&#124;
+                </tr>
+                <br>
+                <tr>
+                    <td>72 ℉</td>&#124;
+                    <td>74 ℉</td>&#124;
+                    <td>80 ℉</td>&#124;
+                    <td>82 ℉</td>&#124;
+                    <td>72 ℉</td>&#124;
+                    <td>69 ℉</td>&#124;
+                    <td>72 ℉</td>&#124;
+                    <td>75 ℉</td>&#124;
+                    <td>77 ℉</td>&#124;
+                    <td>75 ℉</td>&#124;
+                </tr>
+            </tbody>
         </section>
 
         <article>
             <h3>Franklin Breaks Record</h3>
             <p class="town-article">
-                <img src="images/#" alt="" width="" height=""> short article content placeholder Franklin is a city in Franklin County, Idaho, United States. <br> The population was 641 at the 2010 census. <br> It is part of the Logan, Utah-Idaho Metropolitan Statistical Area.<br> Franklin, Idaho, gets 18 inches of rain per year. The US average is 39. <br> Snowfall is 58 inches. The average US city gets 26 inches of snow per year. <br> The number of days with any measurable precipitation is 52.
+                <img src="images/franklin2.jpg" alt="Franklin2" width="Auto" height="Auto"> <br> Franklin is a city in Franklin County, Idaho, United States. The population was 641 at the 2010 census. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area. Franklin, Idaho, gets 18 inches of rain per year. The US average is 39. Snowfall is 58 inches. The average US city gets 26 inches of snow per year. The number of days with any measurable precipitation is 52.
             </p>
         </article>
+
 
     </main>
 
@@ -111,7 +100,7 @@
         <aside>
             5426 S Main St. Franklin, IA 83454
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | Site Title | <span id="currentdate">Current Date Placeholder</span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | FGS Weather Forecast | <span id="currentdate">2/10/2018</span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>

@@ -8,6 +8,8 @@
 
 body {
     font-size: 16px;
+    font-family: serif;
+    background-color: azure;
     /* Declare the base font-family - from google font api or other */
 }
 
@@ -15,36 +17,53 @@ header,
 nav,
 main,
 footer {
+    max-width: 600px;
+    margin: 0 auto; 
     /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
+    margin: 1.5em auto;
+    }
 
 header {
-    text-align: center;
-}
-
-header h1 {
-    text-align: center;
-}
+    box-sizing: content-box;
+    background-color: azure;
+    margin-bottom: 0;
+    padding-bottom: 0;
+ }
 
 header img {
+    width: 150px;
+    height: 80px;
     float: left;
-    height: auto;
-    padding-top: auto;
+    padding: -100px;
+    }
+
+header h1 {
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    margin-left: 125px;
+    margin-right: 10px;
+    text-align: center;
 }
 
 header .subheading {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
 }
 
 nav {
-    clear: both;    
+    margin-top: 0px;
+    background-color: lightblue;
+    text-align: center;
+    align-content: center;
+    width: 100%;
 }
 
-nav button {}
-
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    display: inline-block;
+    font-size: 12px;
+    margin: ;
     padding: 0;
     width: 100%;
     background-color: #f1f1f1;
@@ -53,31 +72,37 @@ nav ul {
 }
 
 nav ul li {
+    font-size: 12px;
     text-align: center;
     border-bottom: 1px solid #555;
 }
 
 nav ul li a {
-    display: block;
+    display: inline-block;
     color: #000;
-    padding: 8px 16px;
+    padding: 0px 0px 0px 0px ;
     text-decoration: none;
 }
 
 nav ul li.active a {
     background-color: #0000ff;
-    color: white;
+    color: greenyellow;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
 }
 
-nav ul li a:hover {
-    background-color: #0000ff;
-    color: white;
+main {
+    background-color: white;
 }
-
-main {}
 
 main h2 {
-    clear: both;
+    font-family: serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
 }
 
 main figure {
@@ -86,26 +111,81 @@ main figure {
 }
 
 main figure img {
-    width: 600px;
+    width: 100%;
 }
 
-section {}
-
-article p.town-article img {
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: ???;
-    /* fill the page in the small/phone view */
-    margin: ???;
+main ul {
+    text-align: center;
+    text-decoration: underline;
+    background-color: azure;
+    width: 100%;
 }
 
-footer {
-    background-color: lightblue;
+section {
+    background-color: azure;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section picture img {
+    float: right;
+    margin-right: 35%;
+    margin-left: -45%;
+    margin-top: -5%;
+}
+
+section table {
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: azure;
+}
+
+article {
+    width: 100%;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article h3 {
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
+
+article p.town-article {
+    background-color: white;
+    font-size: 1rem;
     text-align: center;
 }
 
-footer aside {}
+article p.town-article img {
+    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    max-width: 100%;
+    /* fill the page in the small/phone view */
+    height: auto;
+    float: none;
+    margin: 15px 20px 15px 20px;
+    padding: 0.2px;
+}
 
-footer > p {}
+footer {
+    background-color: aliceblue;
+    color: black;
+}
+
+footer aside {
+    text-align: center;
+    font-size: 1rem;
+}
+
+footer > p {
+    text-align: center;
+    font-size: 0.8rem;
+}
 
 /* This structure refers to p elements that are direct children of the footer element */
 
