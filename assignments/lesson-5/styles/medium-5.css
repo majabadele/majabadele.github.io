@@ -54,6 +54,7 @@
     }
 
     section {
+        display: block;
         font-size: 14px;
         background-color: azure;
         text-align: center;

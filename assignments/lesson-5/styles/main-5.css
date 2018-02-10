@@ -129,6 +129,7 @@ main ul {
 }
 
 section {
+    display: none;
     font-size: 10px;
     background-color: azure;
     text-align: center;
