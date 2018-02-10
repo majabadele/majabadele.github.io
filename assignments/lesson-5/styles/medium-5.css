@@ -1,6 +1,13 @@
 @media only screen and (min-width: 350px) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     /* responsive images */
+    nav {
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: azure
+        
+    }
+
     nav ul li {
         display: inline-block;
         font-size: 20px;
@@ -11,12 +18,12 @@
     nav,
     main,
     footer {
-        max-width: 700px;
+        max-width: 800px;
     }
 
     header img {
         width: auto;
-        height: 150px        ;
+        height: 150px;
         float: left;
         padding: -100px;
     }
@@ -27,30 +34,31 @@
         font-size: 4rem;
         margin-left: 125px;
         margin-right: 10px;
+        background-color: azure
     }
     main figure img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    height: 80%;
-    background-color: azure;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        height: 80%;
+        background-color: azure;
     }
 
-main ul {
-    font-size: 24px;
-    text-align: center;
-    text-decoration: underline;
-    background-color: azure;
-    width: 100%;
-}
+    main ul {
+        font-size: 24px;
+        text-align: center;
+        text-decoration: underline;
+        background-color: azure;
+        width: 100%;
+    }
 
-section {
-    font-size: 14px;
-    background-color: azure;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+    section {
+        font-size: 14px;
+        background-color: azure;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
 }
