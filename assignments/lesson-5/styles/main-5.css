@@ -17,8 +17,7 @@ header,
 nav,
 main,
 footer {
-    max-width: 600px;
-    margin: 0 auto; 
+    max-width: 350px;
     /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: 1.5em auto;
@@ -39,12 +38,12 @@ header img {
     }
 
 header h1 {
+    text-align: center;
     font-family: sans-serif;
     font-size: 1.6rem;
     margin-left: 125px;
     margin-right: 10px;
-    text-align: center;
-}
+    }
 
 header .subheading {
     font-size: 2rem;
@@ -95,7 +94,7 @@ tr {
 }
 
 main {
-    background-color: white;
+    background-color: azure;
 }
 
 main h2 {
@@ -107,14 +106,19 @@ main h2 {
 
 main figure {
     margin: 0 0 .2rem 2%;
-    width: 96%;
-}
+    width: auto;
+    }
 
 main figure img {
-    width: 100%;
-}
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: azure;
+    }
 
 main ul {
+    font-size: 14px;
     text-align: center;
     text-decoration: underline;
     background-color: azure;
@@ -122,6 +126,7 @@ main ul {
 }
 
 section {
+    font-size: 10px;
     background-color: azure;
     text-align: center;
     margin-left: auto;

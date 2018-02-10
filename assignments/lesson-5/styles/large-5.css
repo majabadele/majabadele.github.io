@@ -1,3 +1,15 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+     nav ul li{
+        display: inline-block;
+    }
+    header, nav, main, footer {
+        max-width:inherit;
+    }
+    header img {
+        width: auto;
+        height: 200px        ;
+        float: left;
+        padding: -100px;
+    }
 }

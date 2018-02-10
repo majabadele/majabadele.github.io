@@ -1,5 +1,56 @@
-@media only screen and (min-width: 26em) {
+@media only screen and (min-width: 350px) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     /* responsive images */
+    nav ul li {
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+    }
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 800px;
+    }
+
+    header img {
+        width: auto;
+        height: 150px        ;
+        float: left;
+        padding: -100px;
+    }
+
+    header h1 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 4rem;
+        margin-left: 125px;
+        margin-right: 10px;
+    }
+    main figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80%;
+    background-color: azure;
+    }
+
+main ul {
+    font-size: 24px;
+    text-align: center;
+    text-decoration: underline;
+    background-color: azure;
+    width: 100%;
 }
-   
+
+section {
+    font-size: 18px;
+    background-color: azure;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}
