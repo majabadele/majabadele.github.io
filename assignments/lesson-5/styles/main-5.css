@@ -104,6 +104,9 @@ main h2 {
     color: black;
 }
 
+main h3{
+    text-align: center
+}
 main figure {
     margin: 0 0 .2rem 2%;
     width: auto;
