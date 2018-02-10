@@ -17,8 +17,7 @@ header,
 nav,
 main,
 footer {
-    max-width: 399px;
-    min-width: 300px;
+    max-width: 399px;'
     /* the comma means apply the following CSS declarations to all of the listed elements */
     /* Declare the maximum width and other main element rules to limit the stretch on wide views */
     margin: 1.5em auto;
@@ -27,7 +26,7 @@ footer {
 header {
     box-sizing: content-box;
     background-color: azure;
-    margin-bottom: 0;
+    margin-bottom: ;
     padding-bottom: 0;
  }
 
@@ -44,13 +43,8 @@ header h1 {
     font-size: 27px;
     margin-left: 125px;
     margin-right: 10px;
+    clear: right;
     }
-
-header .subheading {
-    font-size: 2rem;
-    text-align: center;
-    color: white;
-}
 
 nav {
     margin-top: -100px;
@@ -124,7 +118,7 @@ main figure img {
 main ul {
     font-size: 14px;
     text-align: center;
-    text-decoration: underline;
+    text-decoration: none;
     background-color: azure;
     width: 100%;
 }
