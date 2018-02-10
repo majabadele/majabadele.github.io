@@ -4,6 +4,7 @@
         display: inline-block;
     }
     header, nav, main, footer {
+        display: block;
         max-width:inherit;
     }
     header img {

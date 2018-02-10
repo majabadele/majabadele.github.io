@@ -18,6 +18,7 @@
     nav,
     main,
     footer {
+        display: block;
         max-width: 800px;
     }
 
