@@ -18,16 +18,14 @@ nav,
 main,
 footer {
     display: block;
-    max-width: 399px;'
-    /* the comma means apply the following CSS declarations to all of the listed elements */
-    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+    max-width: 399px;
     margin: 1.5em auto;
     }
 
 header {
     box-sizing: content-box;
     background-color: azure;
-    margin-bottom: ;
+    margin-bottom:auto;
     padding-bottom: 0;
  }
 
@@ -35,7 +33,6 @@ header img {
     width: 200px;
     height: 80px;
     float: left;
-    padding: -100px;
     }
 
 header h1 {

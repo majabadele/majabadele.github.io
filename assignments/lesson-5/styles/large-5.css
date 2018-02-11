@@ -22,7 +22,7 @@
     main figure{
         display: block;
         width: 500px;
-        height: 500;
+        height: 250px;
         float: left;
     }
     main ul {
