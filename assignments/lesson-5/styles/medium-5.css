@@ -5,7 +5,6 @@
         margin-top: 0;
         margin-bottom: 0;
         background-color: azure
-        
     }
 
     nav ul li {
@@ -26,7 +25,7 @@
         width: auto;
         height: 150px;
         float: left;
-        }
+    }
 
     header h1 {
         text-align: center;

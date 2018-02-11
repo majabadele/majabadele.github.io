@@ -20,28 +20,28 @@ footer {
     display: block;
     max-width: 399px;
     margin: 1.5em auto;
-    }
+}
 
 header {
     box-sizing: content-box;
     background-color: azure;
-    margin-bottom:auto;
+    margin-bottom: auto;
     padding-bottom: 0;
- }
+}
 
 header img {
     width: 200px;
     height: 80px;
     float: left;
-    }
+}
 
 header h1 {
     text-align: center;
     font-family: sans-serif;
     font-size: 27px;
     margin-left: 125px;
-    margin-right: 10px; 
-    }
+    margin-right: 10px;
+}
 
 nav {
     clear: both;
@@ -55,8 +55,6 @@ nav {
 nav ul {
     display: inline-block;
     font-size: 12px;
-    margin: ;
-    padding: 0;
     width: 100%;
     background-color: #f1f1f1;
     border: 1px solid #555;
@@ -72,7 +70,7 @@ nav ul li {
 nav ul li a {
     display: inline-block;
     color: #000;
-    padding: 0px 0px 0px 0px ;
+    padding: 0px 0px 0px 0px;
     text-decoration: none;
 }
 
@@ -80,6 +78,7 @@ nav ul li.active a {
     background-color: #0000ff;
     color: greenyellow;
 }
+
 tr {
     display: table-row;
     vertical-align: inherit;
@@ -97,13 +96,14 @@ main h2 {
     color: black;
 }
 
-main h3{
+main h3 {
     text-align: center
 }
+
 main figure {
     margin: 0 0 .2rem 2%;
     width: auto;
-    }
+}
 
 main figure img {
     display: block;
@@ -111,7 +111,7 @@ main figure img {
     margin-right: auto;
     width: 80%;
     background-color: azure;
-    }
+}
 
 main ul {
     font-size: 14px;
