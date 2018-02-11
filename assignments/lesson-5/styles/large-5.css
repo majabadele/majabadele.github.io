@@ -1,43 +1,44 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-     nav ul li{
+    nav ul li {
         display: inline-block;
     }
-    header, nav, main, footer {
+    header,
+    main,
+    footer {
         display: block;
-        max-width:inherit;
+        max-width: inherit;
     }
     header img {
         width: auto;
-        height: 200px        ;
+        height: 200px;
         float: left;
         padding: -100px;
     }
-    
-    main ul {
-    font-size: 30px;
-    text-align: center;
-    text-decoration: underline;
-    background-color: azure;
-    width: 100%;
-}
-    section {
-    font-size: 20px;
-    background-color: azure;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-    article h3 {
-    font-family: sans-serif;
-    font-size: 40px;
-    text-align: center;
-    color: black;
-}
 
-article p.town-article {
-    background-color: white;
-    font-size: 1.5rem;
-    text-align: center;
-}
+    main ul {
+        font-size: 30px;
+        text-align: center;
+        background-color: azure;
+        width: 100%;
+    }
+    section {
+        font-size: 20px;
+        background-color: azure;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    article h3 {
+        font-family: sans-serif;
+        font-size: 40px;
+        text-align: center;
+        color: black;
+    }
+
+    article p.town-article {
+        background-color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }
