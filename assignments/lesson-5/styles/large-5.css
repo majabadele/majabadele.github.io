@@ -1,25 +1,24 @@
 @media only screen and (min-width: 64em) {
     /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    
-    header, nav,
+    header,
+    nav,
     main,
     footer {
         display: block;
         max-width: 2000px;
-   }
-    
+    }
+
     nav ul li {
         display: inline-block;
         font-size: 30px;
     }
-    
+
     header img {
         height: 200px;
         width: 200px;
         float: left;
-        padding: -100px;
     }
-    main figure{
+    main figure {
         display: block;
         width: 500px;
         height: 250px;
@@ -38,8 +37,8 @@
         font-size: 20px;
         background-color: azure;
         text-align: center;
-        }
-    
+    }
+
     article h3 {
         display: block;
         clear: both;
