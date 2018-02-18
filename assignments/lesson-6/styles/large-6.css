@@ -1,8 +1,61 @@
 @media only screen and (min-width: 64rem) {
-    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
-    
+
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: block;
+    }
 
     nav ul li {
+        display: inline-block;
+        float: left;
+        font-size: 20px;
+        text-align: center;
+        border-bottom: 1px solid #555;
+
+    }
+    nav ul li a {
         padding: .6rem 1rem;
     }
+    main ul {
+        list-style-type: none;
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        background-color: azure;
+        width: 100%;
+    }
+    /* shows the 10-day forecast */
+    section.forecast {
+        display: block;
+        font-size: 20px
+    }
+
+
+    article {
+        display: block;
+    }
+    article p.town-article img {
+        /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+        clear: both;
+        width: 50%;
+        /* fill the page in the small/phone view */
+        height: auto;
+        float: right;
+        margin: 15px 20px 15px 20px;
+        padding: 0.2px;
+    }
+
+    article p.town-article {
+        width: 50%;
+        clear: both;
+    }
+    
+    .clearfix: after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
 }

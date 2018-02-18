@@ -38,7 +38,6 @@ header .subheading {
 }
 
 nav button {
-    
     float: left;
     margin: .2rem 2%;
     background-color: transparent;
@@ -46,6 +45,9 @@ nav button {
     font-size: 1.6rem;
     color: black;
     
+}
+nav { 
+    font-family: 'kavianar', cursive;
 }
 
 nav ul {
@@ -64,7 +66,7 @@ nav ul li {
 }
 
 nav ul li a {
-    display: inline-block;
+    display: block;
     color: #000;
     padding: .8rem 2%;
     text-decoration: none;
@@ -73,12 +75,12 @@ nav ul li a {
 }
 
 nav ul li.active a {
-    background-color: deepskyblue;
+    background-color: cornflowerblue;
     color: blue;
 }
 
 nav ul li a:hover {
-    background-color: deepskyblue;
+    background-color: blue;
 }
 nav ul.hide {display: none;}
 
@@ -100,7 +102,7 @@ main h3 {
 main figure.photo {
     float: left;
     clear: both;
-    width: 50%;
+    width: 40%;
     margin: 0 0 0 2%;
 }
 
@@ -114,11 +116,14 @@ main figure.photo figcaption {
 
 main ul {
    list-style-type: none;
-    font-size: 14px;
+    font-size: 15px;
     text-align: center;
     text-decoration: none;
     background-color: azure;
     width: 100%;
+}
+main picture image{
+    display: block;
 }
 section {
     clear: both;
@@ -158,10 +163,10 @@ article p.town-article {
 
 article p.town-article img {
     /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-    width: 360px;
+    width: 50%;
     /* fill the page in the small/phone view */
     height: auto;
-    float: none;
+    float: right;
     margin: 15px 20px 15px 20px;
     padding: 0.2px;
 }
