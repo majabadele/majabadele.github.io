@@ -1,7 +1,10 @@
-@media only screen and (min-width: 400px) {
+l@media only screen and (min-width: 400px) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
     /* responsive images */
     
+    nav button{display: none;}
+    nav ul.hide {block;}
+   
     nav {
         margin-top: 0;
         margin-bottom: 0;
@@ -13,13 +16,6 @@
         font-size: 20px;
         text-align: center;
         border-bottom: 1px solid #555;
-    }
-    header,
-    nav,
-    main,
-    footer {
-        display: block;
-        max-width: 800px;
     }
 
     header img {

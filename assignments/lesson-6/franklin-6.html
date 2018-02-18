@@ -12,37 +12,51 @@
     <!-- Google API font reference -->
     <link href="styles/normalize.css" rel="stylesheet">
     <!-- normalize useragent/browser defaults -->
-    <link href="styles/main-5.css" rel="stylesheet">
+    <link href="styles/main-6.css" rel="stylesheet">
     <!-- default styles - small/phone views -->
-    <link href="styles/medium-5.css" rel="stylesheet">
+    <link href="styles/medium-6.css" rel="stylesheet">
     <!-- medium/tablet views -->
-    <link href="styles/large-5.css" rel="stylesheet">
+    <link href="styles/large-6.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
 </head>
+
 <body>
     <header class="clearfix">
-        <figure class="logo">        
-        <img src="images/logo.png" alt="Logo"
-            scrset= "images/logo1">
+        <figure class="logo">
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/logo1.jpg">
+
+                <source media="(max-width: 64em)" srcset="images/logo2.jpg">
+
+                <source media="(min-width: 64em)" srcset="images/logo3.jpg">
+
+                <img src="images/logo.jpg" alt="logo">
+            </picture>
         </figure>
-        <h1>Franklin City</h1>
-        <div class="subheading"></div>
+        <h1>FGS WEATHER FORECAST</h1>
+        <div class="subheading">
+            The most accurate weather report.</div>
     </header>
+
     <!-- site navigation use placeholder references -->
-    <nav>
-        <ul class="navigation">
+
+    <nav class="clearfix">
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Franklin</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
             <li><a href="#">Springfield</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="#">Gallery</a></li>
         </ul>
     </nav>
-    <main>
-        <h2>The City of Franklin</h2>
+
+    <main class="clearfix">
+        <h2>Franklin City</h2>
+        <h3>The city of the mountains</h3>
         <figure class="photo">
-            <img src="images/franklin-original.jpeg">
+            <img src="images/franklin-original.jpeg" alt=" franklin" sizes="50vw" srcset="images/franklin1.jpg 200 w, images/franklin2.jpg 500w, images/franklin3.jpg 800w">
             <figcaption>Franklin City</figcaption>
         </figure>
         <h3>Weather Summary</h3>
@@ -54,6 +68,9 @@
                 <li> Precipitation: 0 in.</li>
                 <li> Max Wind: 10 mpw W</li>
             </ul>
+            <picture>
+                <img src="images/sol.png" alt="sunny" height="100" width="100">
+            </picture>
         </div>
         <section class="forecast">
             <tbody>
@@ -86,22 +103,23 @@
             </tbody>
         </section>
         <article>
-            <h3>Franklin interesting facts</h3>
+            <h3>Franklin Breaks Record</h3>
             <p class="town-article">
-                <img src="images/franklin3.jpg" alt="franklin3">
-                <img src="images/franklin2.jpg" alt="Franklin2"> <br> Franklin is a city in Franklin County, Idaho, United States. The population was 641 at the 2010 census. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area. Franklin, Idaho, gets 18 inches of rain per year. The US average is 39. Snowfall is 58 inches. The average US city gets 26 inches of snow per year. The number of days with any measurable precipitation is 52.
+                <img src="images/franklin12.jpg" alt="Franklin12"> <br> Franklin is a city in Franklin County, Idaho, United States. The population was 641 at the 2010 census. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area. Franklin, Idaho, gets 18 inches of rain per year. The US average is 39. Snowfall is 58 inches. The average US city gets 26 inches of snow per year. The number of days with any measurable precipitation is 52.
             </p>
         </article>
     </main>
 
-    <footer>
+    <footer class="clearfix">
         <aside>
             5426 S Main St. Franklin, IA 83454
         </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | FGS Weather Forecast | <span id="currentdate">2/10/2018</span></p>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | FGS Weather Forecast |
+            <span id="currentdate">curentdate.js</span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/currentdate.js">
+    </script>
 </body>
 </html>

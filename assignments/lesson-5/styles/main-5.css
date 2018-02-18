@@ -13,16 +13,7 @@ body {
     /* Declare the base font-family - from google font api or other */
 }
 
-header,
-nav,
-main,
-footer {
-    display: block;
-    max-width: 399px;
-    margin: 1.5em auto;
-}
-
-header {
+  header {
     box-sizing: content-box;
     background-color: azure;
     margin-bottom: auto;
@@ -42,7 +33,15 @@ header h1 {
     margin-left: 125px;
     margin-right: 10px;
 }
-
+nav button {
+    float: left;
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+    
+}
 nav {
     clear: both;
     margin-top: -100px;
@@ -59,6 +58,7 @@ nav ul {
     background-color: #f1f1f1;
     border: 1px solid #555;
     text-decoration: none;
+    list-style-type: none;
 }
 
 nav ul li {
@@ -79,11 +79,7 @@ nav ul li.active a {
     color: greenyellow;
 }
 
-tr {
-    display: table-row;
-    vertical-align: inherit;
-    border-color: inherit;
-}
+nav ul.hide {display: none;}
 
 main {
     background-color: azure;
@@ -99,6 +95,20 @@ main h2 {
 main h3 {
     text-align: center
 }
+
+main figure.photo {
+    float: left;
+    clear: both;
+    width: 50%;
+    margin: 0 0 0 2%;
+}
+
+main figure.photo img {
+    width: 100%;
+   }
+
+main figure.photo figcaption {
+    text-align: center}
 
 main figure {
     margin: 0 0 .2rem 2%;
