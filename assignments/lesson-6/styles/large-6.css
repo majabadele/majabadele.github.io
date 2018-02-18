@@ -1,5 +1,18 @@
 @media only screen and (min-width: 64rem) {
 
+    header h1 {
+        font-size: 50px;
+        display: block;
+        margin-left: .75rem;
+        padding: .5rem;
+    }
+    header .subheading {
+        display: inline;
+        font-size: 2em;
+        text-align: center;
+        margin-top: -9px;
+    }
+
     nav button {
         display: none;
     }
@@ -20,7 +33,7 @@
     }
     main ul {
         list-style-type: none;
-        font-size: 30px;
+        font-size: 50px;
         text-align: center;
         text-decoration: none;
         background-color: azure;
@@ -28,30 +41,55 @@
     }
     /* shows the 10-day forecast */
     section.forecast {
+        clear: both;
         display: block;
         font-size: 20px
     }
+    main figure.photo {
+    float: left;
+    clear: both;
+    width: 50%;
+    margin: 0 0 0 2%;
+}
 
+main figure.photo img {
+    width: 100%;
+   }
 
     article {
+        font-size: 40px;
+        width: 75%;
         display: block;
     }
+    article p.town-article {
+        background-color: white;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
     article p.town-article img {
         /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-        clear: both;
-        width: 50%;
+        width: 25%;
         /* fill the page in the small/phone view */
         height: auto;
-        float: right;
+        float: left;
+        ;
         margin: 15px 20px 15px 20px;
         padding: 0.2px;
     }
 
     article p.town-article {
-        width: 50%;
+        float: right;
+        width: 100%;
         clear: both;
     }
-    
+    footer {
+        font-size: 30px;
+        clear: both;
+        background-color: aliceblue;
+        color: black;
+    }
+
     .clearfix: after {
         content: "";
         display: table;

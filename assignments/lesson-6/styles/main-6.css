@@ -71,7 +71,7 @@ nav ul li a {
     padding: .8rem 2%;
     text-decoration: none;
     color: black;
-    border-top: 1px solid rgba(o, o, o, o)
+    border-top: 1px;
 }
 
 nav ul li.active a {
@@ -89,6 +89,8 @@ main {
 }
 
 main h2 {
+    clear: both;
+    padding-top: 2em;
     font-family: 'kavianar', cursive;
     font-size: 1.5rem;
     text-align: center;
