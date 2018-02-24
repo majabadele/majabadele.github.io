@@ -69,14 +69,13 @@ article .town-article {
 #footerNav {
 	 list-style-type: none;
 	 text-decoration: none;
-    display: flex;
-    flex-direction: row;
+     display: flex;
+     flex-direction: row;
 	 justify-content: space-around;
 }
 /*----GALLERY GRID-----*/
-.weather-grid {
+        .weather-grid {
     display: grid;
     grid-template-columns: 1fr 1fr; 
 }
-
 }
