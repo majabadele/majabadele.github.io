@@ -1,0 +1,213 @@
+/* small phone view */
+
+* { box-sizing: border-box;}  
+
+/*---------BODY----------*/
+body {
+    font-family: "Barlow Condensed", Lora;
+}
+
+/*----------HEADER----------*/
+header {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    align-items: center;
+    background-color: blue;
+}a
+.logoimage {
+    width: 3em; 
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header h1 {
+    align-items: center;
+    margin: 0;
+    font-size: 18px;
+    font-family: verdana;  
+}
+header .subheading {
+    font-size: 14px;
+}
+
+
+/*---------NAVIGATION-----------*/
+
+nav ul {
+    background-color: deepskyblue;
+    margin: 0; 
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+    
+nav li {
+    display: flex; 
+    width: 100%; 
+    justify-content: center;
+    align-items: center;
+}
+    
+a {
+	 display: block; 
+	 padding: 15px 30px;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-align: center; 
+    }
+
+li:hover {
+    background-color: orange;   
+    }
+a:hover {color:white;} 
+li.active {
+    background-color: #8acef3;
+    color: white;
+    }
+
+nav button {
+    font-size: 1.8rem;
+    border: none;
+}
+
+nav ul.hide {display: none;}
+/*-----------CONTENT------------*/
+
+main figure { margin: 0; width:100%; }
+main figure img { 
+   width: 100%;
+   height: auto;
+}
+
+h2 {
+   font-size: 2.4em;
+   margin-bottom: -15px;
+   margin-top: 5px; 
+   text-align: center;
+}
+h3 {
+   font-size: 2em; 
+   margin-bottom: 10px;
+   text-align: center;
+}
+
+#summary {
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   font-size: 24px;
+}
+.current span{
+	display:flex;
+	flex-wrap: wrap;
+}
+.highlow {
+	display: flex;
+	flex-direction: row;
+}
+
+#high, #low {margin:5px;}
+
+.conditions {
+	display: flex;
+	flex-direction: row;
+}
+
+#prec, #wind {margin: 5px;}
+
+.windchill button {
+	font-family: "Barlow Condensed", Lora;
+	background-color: rgb(255, 185, 66);
+	border-radius: 12px;
+}
+
+/*--------FORECAST---------*/
+
+.forecast {
+   display: none;
+   text-align: center;
+}
+
+#forecast {
+	font-size: 3vw;
+}
+
+table {
+   border-collapse: collapse;
+   margin: 20px 5px 20px 5px;
+   width: 100%;
+}
+
+table, td, th {
+   border: 1px solid black;
+}
+
+th, td {
+   height: 50px;
+	background-color: azure;
+}
+/*----------ARTICLE----------*/
+article {
+	display: flex;
+	flex-direction: column;
+	align-items: center; 
+}
+
+.town-article {
+	font-size: 17px;
+   text-align: justify;
+	padding: 10px;
+}
+.beach img {
+	width: 100%;
+	padding: 10px;
+}
+
+
+/*--------WEATHER GRID--------*/
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+.weather { 
+	display: grid;
+	height: 320px;
+}
+
+.weather-info {
+	 font-size: 14px;
+    margin-top: 13px;
+}
+.weather-info p {
+    font-size: 1.3em;
+    margin-top: 2px;
+	 text-align: center;
+}
+
+
+/*---------- FOOTER -------------*/
+footer {
+    text-align: center;
+    font-family: Georgia;
+    font-size: 14px;
+	 background-color: #a6b4bd;
+	 margin: 5px;
+	 padding: 10px;
+}
+#footerNav {
+	 list-style-type: none;
+	 text-decoration: none;
+    display: flex;
+    flex-direction: column;
+	 justify-content: space-around;
+}
+#footerItem:hover {color: white;}
+footer aside {font-size: 16px;}

@@ -1,124 +1,102 @@
-ul,
-li {
-    list-style: none;
-}
-h2{
-    padding: 0em;
-}
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 
-a {
-    text-decoration: none;
+@media only screen and (min-width: 64em ) {
+	
+/*---------HEADER-----------*/
+.logoimage {
+    width: 10em; 
 }
+header h1 {
+		font-size: 34px;
+	}
+header .subheading {
+    font-size: 18px;
+}
+  
+/*---------NAVIGATION-----------*/
+    
+nav button {display: none;}
+nav ul.hide {display: flex;}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	}    
+    
+      
+/*-----------CONTENT------------*/
+ body {
+    width: 1080px;
+    margin: auto;
+    }
 
-.mainContainer {
-    display: flex;
-    justify-content: center;
-    flex-flow: row;
-}
-
-.rowContainer {
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    flex-flow: row;
-    margin-left: 50px
-}
-table, th, td {
-    border: 1px solid black;
-}
-thead{ 
-    font-size: 20px;
-    text-align: center;
-    font-family: verdana;
-}
-
-.colContainer {
-    display: flex;
-    flex-flow: column;
-}
-
-.subContainer {
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    width: 80%;
-}
-
-.pageTitle {
-    background-color: blue;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    padding: 0em
-}
-
-.subheading {
-    background-color: blue;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    padding: 0em;
-}
-
-.navigation {
-    background-color: goldenrod;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
-
-.navigation a {
-    display: block;
-    padding: 1em;
-    color: white;
-    font-weight: bold;
-}
-
-.square {
-    font-size: 20px;
-    background-color: skyblue;
-    width: 12em;
-    height: 12em;
-    margin: 3px;
-}
-
-.forecast {
-    font-size: 30px;
+main figure { margin: 0; width:100%; }
+main figure img { 
     width: 100%;
+    height: auto;
+}
+	
+/*---------WEATHER SUMMARY--------*/  
+ #summary {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   
 }
 
-cont20 {
-    width: 50em;
+.current span{
+	display:flex;
+	justify-content: center;
+	margin-top: -10px;
+}
+.highlow, .conditions {
+	display: flex; 
+	flex-direction: column;
 }
 
-.article {
-    display: -webkit-flex;
+table {width: 70%; margin: auto;}
+
+ /*---------ARTICLE--------*/         
+
+
+article {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+article .town-article {
+	width: 40%;
+}
+.beach img {
+	display: flex;
+	clear:right;
+}
+	
+	/* shows the 10-day forecast */
+ section.forecast { display: flex;
+	margin-top: 20px;} 
+	
+	
+/*-----------FOOTER----------*/
+#footerNav {
+	 list-style-type: none;
+	 text-decoration: none;
     display: flex;
-    -webkit-flex-direction: row;
     flex-direction: row;
-    -webkit-align-items: center;
-    align-items: center;
-
-    flex-wrap: wrap;
-    min-width: 320px;
-    max-width: 1220px;
-    font-size: 20px;
-    width: 40%;
+	 justify-content: space-around;
 }
-.article p{
-    align-content: center;
-    padding: 0;
+ 
+/*--------WEATHER GRID--------*/
+.weather:hover {
+	box-shadow: 5px 5px 5px gray;
+	border: 1px solid;
+	}
 
-}
-
-footer {
-    background-color: azure;
-    font-size: 20px;
-    text-align: center;
-    color: black;
+.weather-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+	 margin-bottom: 20px;
 }
 
-footer > p {
-    text-align: center;
-    font-size: 0.8rem;
+
 }
