@@ -4,7 +4,8 @@
 
 /*---------BODY----------*/
 body {
-    font-family: "Barlow Condensed", Lora;
+    background-color: azure;
+    font-family: verdana;
 }
 
 /*----------HEADER----------*/
@@ -13,7 +14,7 @@ header {
     width: 100%;
     flex-flow: row;
     align-items: center;
-    background-color: blue;
+    background-color: deepskyblue;
 }a
 .logoimage {
     width: 3em; 
@@ -37,7 +38,7 @@ header .subheading {
 /*---------NAVIGATION-----------*/
 
 nav ul {
-    background-color: deepskyblue;
+    background-color: skyblue;
     margin: 0; 
     list-style-type: none;
     display: flex;
@@ -198,7 +199,7 @@ footer {
     text-align: center;
     font-family: Georgia;
     font-size: 14px;
-	 background-color: #a6b4bd;
+	 background-color: azure;
 	 margin: 5px;
 	 padding: 10px;
 }
