@@ -195,6 +195,7 @@ article {
 
 /*---------- FOOTER -------------*/
 footer {
+    clear: both;
     text-align: center;
     font-family: Georgia;
     font-size: 14px;
