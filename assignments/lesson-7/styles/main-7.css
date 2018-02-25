@@ -15,8 +15,8 @@ header {
     flex-flow: row;
     align-items: center;
     background-color: deepskyblue;
-}a
-.logoimage {
+}
+a.logoimage {
     width: 3em; 
 }
 header div {
@@ -197,7 +197,7 @@ article {
 footer {
     clear: both;
     text-align: center;
-    font-family: Georgia;
+    font-family: verdana;
     font-size: 14px;
 	 background-color: azure;
 	 margin: 5px;
