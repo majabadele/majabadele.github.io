@@ -88,13 +88,13 @@ article .town-article {
  
 /*--------WEATHER GRID--------*/
 .weather:hover {
-	box-shadow: 5px 5px 5px gray;
+	box-shadow: 3px 3px 3px gray;
 	border: 1px solid;
 	}
 
 .weather-grid {
-    display: grid;
+    display: grid;  
     grid-template-columns: 1fr 1fr 1fr;
-	 margin-bottom: 20px;
+	margin-bottom: 50px;
 }
 }
