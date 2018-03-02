@@ -67,11 +67,7 @@ article {
 article .town-article {
 	width: 40%;
 }
-.beach img {
-	display: flex;
-	clear:right;
-}
-	
+
 	/* shows the 10-day forecast */
  section.forecast { display: flex;
 	margin-top: 20px;} 
@@ -88,13 +84,13 @@ article .town-article {
  
 /*--------WEATHER GRID--------*/
 .weather:hover {
-	box-shadow: 3px 3px 3px gray;
+	box-shadow: 5px 5px 5px gray;
 	border: 1px solid;
 	}
 
 .weather-grid {
-    display: grid;  
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-	margin-bottom: 50px;
+	 margin-bottom: 20px;
 }
 }
