@@ -178,9 +178,9 @@ article {
     grid-template-rows: auto;
     grid-gap: 20px;
 }
-.weather { 
+.weather {
 	display: grid;
-	height: 320px;
+	height: 350px;
 }
 
 .weather-info {
