@@ -1,14 +1,18 @@
 /* small phone view */
 
-* { box-sizing: border-box;}  
+* {
+    box-sizing: border-box;
+}
 
 /*---------BODY----------*/
+
 body {
     background-color: azure;
     font-family: verdana;
 }
 
 /*----------HEADER----------*/
+
 header {
     display: flex;
     width: 100%;
@@ -16,20 +20,24 @@ header {
     align-items: center;
     background-color: deepskyblue;
 }
+
 a.logoimage {
-    width: 3em; 
+    width: 3em;
 }
+
 header div {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 header h1 {
     align-items: center;
     margin: 0;
     font-size: 18px;
-    font-family: verdana;  
+    font-family: verdana;
 }
+
 header .subheading {
     font-size: 14px;
 }
@@ -39,176 +47,283 @@ header .subheading {
 
 nav ul {
     background-color: skyblue;
-    margin: 0; 
+    margin: 0;
     list-style-type: none;
     display: flex;
     flex-direction: column;
     width: 100%;
 }
-    
+
 nav li {
-    display: flex; 
-    width: 100%; 
+    display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
-    
+
 a {
-	 display: block; 
-	 padding: 15px 30px;
+    display: block;
+    padding: 5px 5px;
     color: black;
     text-decoration: none;
     letter-spacing: 1px;
-    text-align: center; 
-    }
+    text-align: center;
+}
 
 li:hover {
-    background-color: orange;   
-    }
-a:hover {color:white;} 
+    background-color: orange;
+}
+
+a:hover {
+    color: white;
+}
+
 li.active {
     background-color: #8acef3;
     color: white;
-    }
+}
 
 nav button {
     font-size: 1.8rem;
     border: none;
 }
 
-nav ul.hide {display: none;}
+nav ul.hide {
+    display: none;
+}
+
 /*-----------CONTENT------------*/
 
-main figure { margin: 0; width:100%; }
-main figure img { 
-   width: 100%;
-   height: auto;
+main figure {
+    margin: 0;
+    width: 100%;
+}
+
+main figure img {
+    width: 100%;
+    height: auto;
 }
 
 h2 {
-   font-size: 2.4em;
-   margin-bottom: -15px;
-   margin-top: 5px; 
-   text-align: center;
+    font-size: 2.4em;
+    margin-bottom: -15px;
+    margin-top: 5px;
+    text-align: center;
 }
+
 h3 {
-   font-size: 2em; 
-   margin-bottom: 10px;
-   text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 #summary {
-   display: flex;
-   flex-flow: column;
-   align-items: center;
-   font-size: 24px;
-}
-.current span{
-	display:flex;
-	flex-wrap: wrap;
-}
-.highlow {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    font-size: 24px;
 }
 
-#high, #low {margin:5px;}
+.current span {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.highlow {
+    display: flex;
+    flex-direction: row;
+}
+
+#high,
+#low {
+    margin: 5px;
+}
 
 .conditions {
-	display: flex;
-	flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
-#prec, #wind {margin: 5px;}
+#prec,
+#wind {
+    margin: 5px;
+}
 
 .windchill button {
-	font-family: "Barlow Condensed", Lora;
-	background-color: rgb(255, 185, 66);
-	border-radius: 12px;
+    font-family: verdana;
+    background-color: rgb(255, 185, 66);
+    border-radius: 12px;
 }
 
 /*--------FORECAST---------*/
 
 .forecast {
-   display: none;
-   text-align: center;
+    display: none;
+    text-align: center;
 }
 
 #forecast {
-	font-size: 3vw;
+    font-size: 3vw;
 }
 
 table {
-   border-collapse: collapse;
-   margin: 20px 5px 20px 5px;
-   width: 100%;
+    border-collapse: collapse;
+    margin: 20px 5px 20px 5px;
+    width: 100%;
 }
 
-table, td, th {
-   border: 1px solid black;
+table,
+td,
+th {
+    border: 1px solid black;
 }
 
-th, td {
-   height: 50px;
-	background-color: azure;
+th,
+td {
+    height: 50px;
+    background-color: azure;
 }
+
 /*----------ARTICLE----------*/
+
 article {
-	display: flex;
-	flex-direction: column;
-	align-items: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .town-article {
-	font-size: 17px;
-   text-align: justify;
-	padding: 10px;
+    font-size: 17px;
+    text-align: justify;
+    padding: 10px;
 }
-.beach img {
-	width: 100%;
-	padding: 10px;
-}
-
 
 /*--------WEATHER GRID--------*/
 
 .weather-grid {
     display: grid;
+    max-width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
 }
+
 .weather {
-	display: grid;
-	height: 350px;
+    display: grid;
+    height: 400px;
 }
 
 .weather-info {
-	 font-size: 14px;
+    font-size: 14px;
     margin-top: 13px;
 }
+
 .weather-info p {
     font-size: 1.3em;
     margin-top: 2px;
-	 text-align: center;
+    text-align: center;
+}
+
+.weather-image{
+    max-width: 100%
+}
+
+/*-------STORM CENTER--------*/
+
+form#report {
+    margin: 1em 3%;
+}
+
+fieldset {
+    border-radius: .8em;
+    margin: 1.5em 0;
+    border: #a6b4bd solid 1px;
+}
+
+legend {
+    margin-left: 6%;
+    padding: .5em;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    font-size: 1em;
+    color: #000000;
+    padding-top: .9em;
+    padding-bottom: .2em;
+}
+
+.submitButton {
+    -webkit-appearance: none;
+    color: #fff;
+    border: solid 1px #535d66;
+    border-radius: 10px;
+    width: 35%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .6em;
+    background: black;
+    box-shadow: 4px 4px 10px #535d66;
+}
+
+label input {
+    font-family: verdana;
+    color: #535d66;
+    padding: .3em .3em .3em 2em;
+    border: solid 1px #a6b4bd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 90%;
+    max-width: 500px;
+}
+
+label textarea {
+    font-family: verdana;
+    color: #535d66;
+    width: 100%;
+    height: 100px;
+}
+
+input[type=radio] {
+    width: auto;
+}
+
+input:focus {
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5) inset;
 }
 
 /*---------- FOOTER -------------*/
+
 footer {
     clear: both;
     text-align: center;
     font-family: verdana;
     font-size: 14px;
-	 background-color: azure;
-	 margin: 5px;
-	 padding: 10px;
+    background-color: azure;
+    margin: 5px;
+    padding: 10px;
 }
+
 #footerNav {
-	 list-style-type: none;
-	 text-decoration: none;
-     display: flex;
-     flex-direction: column;
-	 justify-content: space-around;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-#footerItem:hover {color: white;}
-footer aside {font-size: 16px;}
+
+#footerItem:hover {
+    color: white;
+}
+
+footer aside {
+    font-size: 16px;
+}
