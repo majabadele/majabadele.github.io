@@ -52,7 +52,7 @@
     <!-- CONTENT -->
     <main>
         <div id="content">
-            <h1>Storm Report Form</h1>
+            <h1>Storm Report</h1>
 
             <div class="report">
 
@@ -72,13 +72,12 @@
 
                     <fieldset>
                         <legend><span>Storm Information</span></legend>
-
                         <label><span>Storm Date:</span><input name="date" type="date"></label>
 
                         <label><span>Storm Type:</span>
         <input type ="text" list="stormtype" name="Storm">
 			  <datalist id="stormtype">
-          <option value="Select Storm Type..."></option>
+          <option value="Storm Type"></option>
 					<option value="Flash Flood"></option>
 					<option value="Hail"></option>
 					<option value="Hurricane"></option>
@@ -86,8 +85,10 @@
 					<option value="Tornado"></option>
 			</datalist>
 			</label>
-
-                        <label><span>Storm Severity:</span><input name="severity" type="range"></label>
+                        <label for="rating">Rating (1 to 10)</label>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue">5</span><br>
+                            
 
                         <label><span>Storm Region: </span>
         <input type="text" list="stormregion" name="Region">
@@ -99,7 +100,6 @@
 			</datalist>
 			</label>
 
-                        <!-- Move Yes,Maybe,No -->
                         <label><span>Danger Level: </span>
           <input type="radio" name="level" value="yes" checked> Yes<br>
           <input type="radio" name="level" value="maybe"> Maybe<br>
@@ -135,6 +135,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/adjustrating.js"></script>
 
 </body>
 
