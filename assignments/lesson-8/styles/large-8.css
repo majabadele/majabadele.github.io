@@ -1,0 +1,100 @@
+/* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+
+@media only screen and (min-width: 64em ) {
+	
+/*---------HEADER-----------*/
+.logoimage {
+    width: 10em; 
+}
+header h1 {
+		font-size: 34px;
+	}
+header .subheading {
+    font-size: 18px;
+}
+  
+/*---------NAVIGATION-----------*/
+    
+nav button {display: none;}
+nav ul.hide {display: flex;}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	}    
+    
+      
+/*-----------CONTENT------------*/
+ body {
+    width: 1080px;
+    margin: auto;
+    }
+
+main figure { margin: 0; width:100%; }
+main figure img { 
+    width: 100%;
+    height: auto;
+}
+	
+/*---------WEATHER SUMMARY--------*/  
+ #summary {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   
+}
+
+.current span{
+	display:flex;
+	justify-content: center;
+	margin-top: -10px;
+}
+.highlow, .conditions {
+	display: flex; 
+	flex-direction: column;
+}
+
+table {width: 70%; margin: auto;}
+
+ /*---------ARTICLE--------*/         
+
+
+article {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+article .town-article {
+	width: 40%;
+}
+.beach img {
+	display: flex;
+	clear:right;
+}
+	
+	/* shows the 10-day forecast */
+ section.forecast { display: flex;
+	margin-top: 20px;} 
+	
+	
+/*-----------FOOTER----------*/
+#footerNav {
+	 list-style-type: none;
+	 text-decoration: none;
+    display: flex;
+    flex-direction: row;
+	 justify-content: space-around;
+}
+ 
+/*--------WEATHER GRID--------*/
+.weather:hover {
+	box-shadow: 3px 3px 3px gray;
+	border: 1px solid;
+	}
+
+.weather-grid {
+    display: grid;  
+    grid-template-columns: 1fr 1fr 1fr;
+	margin-bottom: 50px;
+}
+}
