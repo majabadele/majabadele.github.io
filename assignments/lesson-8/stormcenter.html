@@ -88,7 +88,7 @@
                         <label for="rating">Rating (1 to 10)</label>
                         <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span><br>
-                            
+
 
                         <label><span>Storm Region: </span>
         <input type="text" list="stormregion" name="Region">
@@ -100,7 +100,7 @@
 			</datalist>
 			</label>
 
-                        <label><span>Danger Level: </span>
+                        <label><span>In-Danger Level: </span>
           <input type="radio" name="level" value="yes" checked> Yes<br>
           <input type="radio" name="level" value="maybe"> Maybe<br>
           <input type="radio" name="level" value="no"> No
@@ -113,15 +113,13 @@
 				<textarea name="comment" form="usrform"></textarea>
 			</label>
                     </fieldset>
-                    <!-- Doesn't take me to Thank You -->
+                    <!-- Go to Thank You Page-->
                     <input type="submit" value="Submit" class="submitButton">
                     <input type="hidden" value="thanks.html" name="redirect">
 
                 </form>
             </div>
-            <!-- class report -->
         </div>
-        <!-- class content -->
     </main>
 
     <!-- FOOTER -->
