@@ -56,31 +56,25 @@
 
             <div class="report">
 
-                <main>
-	<div id="content">
-	<h1>Storm Report Form</h1>
+                            <form action="thanks.html" method="post" enctype="multipart/form-data" name="storm" id="report" target="_blank">
 
-   <div class="report">
+                                <fieldset>
+                                    <legend><span>Personal Information</span></legend>
 
-			<form action="assignments/lesson-8/thanks.html" method="post" enctype="multipart/form-data" name="storm" id="report" target="_blank">
+                                    <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,30}" required></label>
 
-                    <fieldset>
-                        <legend><span>Personal Information</span></legend>
+                                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@gmail.com"></label>
 
-                        <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -._]{5,30}" required></label>
+                                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235555554" pattern="[0-9]{10,20}" required></label>
 
-                        <label><span>Email:</span><input name="email" type="email" value="" placeholder="email@gmail.com"></label>
+                                    <label><span>Zip Code:</span><input name="zip" type="number" value="" pattern="[0-9]{5}" required></label>
+                                </fieldset>
 
-                        <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="1235555554" pattern="[0-9]{10,20}" required></label>
+                                <fieldset>
+                                    <legend><span>Storm Information</span></legend>
+                                    <label><span>Storm Date:</span><input name="date" type="date"></label>
 
-                        <label><span>Zip Code:</span><input name="zip" type="number" value="" pattern="[0-9]{5}" required></label>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend><span>Storm Information</span></legend>
-                        <label><span>Storm Date:</span><input name="date" type="date"></label>
-
-                        <label><span>Storm Type:</span>
+                                    <label><span>Storm Type:</span>
         <input type ="text" list="stormtype" name="Storm">
 			  <datalist id="stormtype">
           <option value="Storm Type"></option>
@@ -91,12 +85,12 @@
 					<option value="Tornado"></option>
 			</datalist>
 			</label>
-                        <label for="rating">Rating (1 to 10)</label>
-                        <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id="ratingvalue">5</span><br>
+                                    <label for="rating">Rating (1 to 10)</label>
+                                    <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                                    <span id="ratingvalue">5</span><br>
 
 
-                        <label><span>Storm Region: </span>
+                                    <label><span>Storm Region: </span>
         <input type="text" list="stormregion" name="Region">
 				<datalist id="stormregion">
 					<option value="Select Region.."></option>
@@ -106,45 +100,40 @@
 			</datalist>
 			</label>
 
-                        <label><span>In-Danger Level: </span>
+                                    <label><span>In-Danger Level: </span>
           <input type="radio" name="level" value="yes" checked> Yes<br>
           <input type="radio" name="level" value="maybe"> Maybe<br>
           <input type="radio" name="level" value="no"> No
       </label>
-                    </fieldset>
+                                </fieldset>
 
-                    <fieldset>
-                        <legend><span>Other</span></legend>
-                        <label><span>Additional Information: </span>
+                                <fieldset>
+                                    <legend><span>Other</span></legend>
+                                    <label><span>Additional Information: </span>
 				<textarea name="comment" form="usrform"></textarea>
 			</label>
-                    </fieldset>
-                    <!-- Go to Thank You Page-->
-                    <main>
-	<div id="content">
-	<h1>Storm Report Form</h1>
+                                </fieldset>
+                                <!-- Go to Thank You Page-->
 
-   <div class="report">
+                                <input type="submit" value="Submit" class="submitButton">
+                                <input type="hidden" value="thanks.html" name="redirect">
+                            </form>
+                        </div>
+                    </div>
+                </main>
 
-			<form action="assignments/lesson-8/thanks.html" method="post" enctype="multipart/form-data" name="storm" id="report" target="_blank">
+                <!-- FOOTER -->
+                <footer>
+                    <aside>
+                        5426 S Main St. Franklin, IA 83454
+                    </aside>
+                    <p class="footer-bar">&copy;2018 All Rights Reserved | FGS Weather Forecast |
+                        <span id="currentdate">curentdate.js</span></p>
+                </footer>
 
-                </form>
-            </div>
-        </div>
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-        <aside>
-            5426 S Main St. Franklin, IA 83454
-        </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | FGS Weather Forecast |
-            <span id="currentdate">curentdate.js</span></p>
-    </footer>
-
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
-    <script src="scripts/adjustrating.js"></script>
+                <script src="scripts/hamburger.js"></script>
+                <script src="scripts/currentdate.js"></script>
+                <script src="scripts/adjustrating.js"></script>
 
 </body>
 
