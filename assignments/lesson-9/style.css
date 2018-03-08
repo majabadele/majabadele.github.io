@@ -5,6 +5,7 @@ html {
 }
 
 body {
+    background-color: azure;
     width: 800px;
     margin: 0 auto;
 }
