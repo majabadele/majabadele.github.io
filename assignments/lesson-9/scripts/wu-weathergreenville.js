@@ -1,7 +1,7 @@
 //populate Greenville with data from Underground Weather site
 var weatherGreenville = new XMLHttpRequest();
 
-weatherGreenville.open('GET', 'https://api.wunderground.com/api/15342b83d4c08511/conditions/q/NC/Greenville.json', true);
+weatherGreenville.open('GET', 'https://api.wunderground.com/api/4a91a55e9f5be18c/conditions/q/NC/Greenville.json', true);
 weatherGreenville.send();
 
 weatherGreenville.onload = function() {

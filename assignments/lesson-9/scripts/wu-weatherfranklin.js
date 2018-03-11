@@ -1,7 +1,7 @@
 //populate City Pages with data from Underground Weather site
 var weatherFranklin = new XMLHttpRequest();
 
-weatherFranklin.open('GET', 'https://api.wunderground.com/api/15342b83d4c08511/conditions/q/MN/Franklin.json', true);
+weatherFranklin.open('GET', 'https://api.wunderground.com/api/4a91a55e9f5be18c/conditions/q/MN/Franklin.json', true);
 weatherFranklin.send();
 
 weatherFranklin.onload = function() {
