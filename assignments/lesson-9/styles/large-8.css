@@ -7,10 +7,12 @@
         width: 10em;
     }
     header h1 {
-        font-size: 34px;
+        font-size: 50px;
+        margin-left: 380px;
     }
     header .subheading {
-        font-size: 18px;
+        font-size: 28px;
+        margin-left: 400px;
     }
 
     /*---------NAVIGATION-----------*/
@@ -28,7 +30,7 @@
 
     /*-----------CONTENT------------*/
     body {
-        width: 1080px;
+        width: 1500px;
         margin: auto;
     }
 
