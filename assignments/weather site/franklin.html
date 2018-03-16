@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FGS Weather Forecast</title>
+    <meta name="author" content="Mahonrry Barrios">
+    <!-- external style references in the proper cascading order -->
+    <meta name="description" content="Franklin Weather Page, and gallery content CIT 230 BYU-I, HTML, CSS, JS">
+    <!-- Google API font reference -->
+    <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/main-8.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/medium-8.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+    <link href="styles/large-8.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+        <picture>
+            <img class="logoimage" src="images/logo.jpg" alt="logo">
+        </picture>
+
+        <div>
+            <h1>FGS Weather Forecast</h1>
+            <div class="subheading">The most accurate weather report.</div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <button class="hamburger" onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="franklin-8.html">Franklin</a></li>
+            <li><a href="greenville.html">Greenville</a></li>
+            <li><a href="springfield.html">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-8.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT -->
+    <main>
+        <div id="weatherSummary">
+            <h2><span id="place"></span></h2>
+            <h3>Weather Summary</h3>
+
+            <!-- WEATHER SUMMARY -->
+            <section id="summary">
+                <div class="current">
+                    <img id="w-icon" src="" alt="current weather">
+                    <span id="weatherString"></span>
+                </div>
+
+                <div class="highlow">
+                    <p id="high">High: <span id="highT"></span>&deg;F</p>
+                    <p id="low">Low: <span id="lowT"></span>&deg;F</p>
+                </div>
+
+                <div class="conditions">
+                    <p id="prec">Precipitation: <span id="precip"></span></p>
+                    <p id="wind">Wind Speed: <span id="windSpeed"></span> mph</p>
+                </div>
+
+                <div class="windchill">
+                    <p> Windchill: <span id="windChill"></span>&deg;F</p>
+                </div>
+            </section>
+        </div>
+        </div>
+        <!-- TABLE -->
+        <section class="forecast">
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="10"> 10 Day Forecast</th>
+                    </tr>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ARTICLE -->
+
+        <h3>Franklin Breaks Record</h3>
+        <article>
+            <p class="town-article">
+                Franklin is a city in Franklin County, Idaho, United States. The population was 641 at the 2010 census. It is part of the Logan, Utah-Idaho Metropolitan Statistical Area. Franklin, Idaho, gets 18 inches of rain per year. The US average is 39. Snowfall is 58 inches. The average US city gets 26 inches of snow per year. The number of days with any measurable precipitation is 52.
+            </p>
+            <picture class="beach">
+                <img src="images/franklin12.jpg" alt="franklin">
+            </picture>
+
+        </article>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+        <aside>
+            5426 S Main St. Franklin, IA 83454
+        </aside>
+        <p class="footer-bar">&copy;2018 All Rights Reserved | FGS Weather Forecast |
+            <span id="currentdate">curentdate.js</span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/wu-weatherfranklin.js"></script>
+</body>
+
+</html>

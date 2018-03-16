@@ -1,0 +1,87 @@
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+
+@media only screen and (min-width: 37.5em) and (max-width: 64em) {
+
+    /*---------HEADER-----------*/
+    .logoimage {
+        width: 5em;
+    }
+    header h1 {
+        font-size: 28px;
+    }
+    header .subheading {
+        font-size: 16px;
+    }
+
+    /*---------NAVIGATION-----------*/
+    /* hamburger button hidden */
+    nav button {
+        display: none;
+    }
+    nav ul.hide {
+        display: flex;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    /*-----------CONTENT------------*/
+    main figure {
+        margin: 0;
+        width: 100%;
+    }
+    main figure img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /*---------WEATHER SUMMARY--------*/
+    #summary {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .current span {
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+    }
+    .highlow,
+    .conditions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* shows the 10-day forecast */
+    section.forecast {
+        display: flex;
+    }
+
+    /*---------ARTICLE--------*/
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    article .town-article {
+        width: 45%;
+    }
+
+    /*------------FOOTER----------*/
+    #footerNav {
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*----GALLERY GRID-----*/
+    .weather-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
