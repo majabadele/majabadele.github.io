@@ -43,11 +43,7 @@
         height: auto;
     }
 
-    section#townInfo {
-        width: 100%;
-        flex-direction: row;
-        }
-    /*---------WEATHER SUMMARY--------*/
+   /*---------WEATHER SUMMARY--------*/
     #summary {
         display: flex;
         flex-direction: row;
