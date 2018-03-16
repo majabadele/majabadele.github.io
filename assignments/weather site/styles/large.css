@@ -30,7 +30,7 @@
 
     /*-----------CONTENT------------*/
     body {
-        width: 1500px;
+        width: 1250px;
         margin: auto;
     }
 
@@ -43,6 +43,10 @@
         height: auto;
     }
 
+    section#townInfo {
+        width: 100%;
+        flex-direction: row;
+        }
     /*---------WEATHER SUMMARY--------*/
     #summary {
         display: flex;
