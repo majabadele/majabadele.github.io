@@ -43,13 +43,12 @@
         height: auto;
     }
     
-    /*------------------*/
+    /*------------------------------*/
      .container {
         display: flex;
         flex-flow:row wrap;
         justify-content: center;
         padding: 10px;
-
     }
 
     article.weatherStoryText {
@@ -136,7 +135,6 @@
         display: flex;
         margin-top: 20px;
     }
-
 
     /*-----------FOOTER----------*/
     #footerNav {
