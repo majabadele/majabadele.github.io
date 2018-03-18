@@ -71,7 +71,7 @@ a {
 }
 
 li:hover {
-    background-color: orange;
+    background-color: darkorange;
 }
 
 a:hover {
@@ -79,7 +79,7 @@ a:hover {
 }
 
 li.active {
-    background-color: #8acef3;
+    background-color: orange;
     color: white;
 }
 
