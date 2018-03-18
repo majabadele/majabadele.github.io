@@ -1,0 +1,54 @@
+@media only screen and (min-width: 64em) {
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    .container {
+        display: flex;
+        flex-flow:row wrap;
+        justify-content: center;
+        padding: 10px;
+
+    }
+
+    article.weatherStoryText {
+        min-width: 60%;
+    }
+
+    section.cityInfo img {
+        max-width: 400px;
+    }
+
+    div.weatherStoryContainer img {
+        max-width: 400px;
+    }
+    .weatherStoryContainer {
+        min-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin:auto;
+    }
+
+    .weatherStoryPic {
+        margin-left: 15px;
+    }
+
+    .cityInfo {
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 380px;
+        padding: 10px;
+    }
+
+    #city2{
+        display: flex;
+        flex-flow:column wrap;
+        max-width: 380px;
+        padding: 10px;
+    }
+    .cityInfo div.greenville {
+        margin: 20px 20px 20px 20px;
+}
+
+ #cities {
+        display: flex;
+        flex-flow:row wrap;
+    }
+}

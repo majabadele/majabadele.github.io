@@ -38,8 +38,46 @@
     }
     
    /*--------------*/
-    
-    
+  
+      .weatherStoryContainer {
+        max-width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .weatherStoryPic {
+        margin-left: 15px;
+        max-width: 40%;
+        max-height: 321px;
+        align-self: center
+    }
+
+    .weatherStoryText{
+        width: 20em;
+
+    }
+
+    .cityInfo {
+        display: flex;
+        flex-direction: row-reverse;
+        margin: auto;
+        align-content: stretch;
+    }
+
+    .cityInfo div {
+        flex: 1 1 auto;
+        padding: 20px;
+        margin: 20px 0px 20px 20px;
+        border: double black;
+    }
+
+    #city2 {
+        flex-direction: row;
+    }
+
+    .cityInfo div.greenville {
+        margin: 20px 20px 20px 0px;
+    }
      
     /*---------WEATHER SUMMARY--------*/
     #summary {

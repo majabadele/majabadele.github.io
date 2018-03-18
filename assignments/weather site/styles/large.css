@@ -42,21 +42,17 @@
         width: 100%;
         height: auto;
     }
-    
+
     /*------------------------------*/
-     .container {
+    .containerCities {
         display: flex;
-        flex-flow:row wrap;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         padding: 10px;
     }
 
     article.weatherStoryText {
         min-width: 60%;
-    }
-
-    section.cityInfo img {
-        max-width: 400px;
     }
 
     div.weatherStoryContainer img {
@@ -66,36 +62,19 @@
         min-width: 100%;
         display: flex;
         justify-content: space-around;
-        margin:auto;
+        margin: auto;
     }
 
     .weatherStoryPic {
         margin-left: 15px;
     }
-
-    .cityInfo {
+    
+    #cities {
         display: flex;
-        flex-flow: column wrap;
-        max-width: 380px;
-        padding: 10px;
+        flex-flow:row wrap;
     }
 
-    #city2{
-        display: flex;
-        flex-flow:column wrap;
-        max-width: 380px;
-        padding: 10px;
-    }
-    .cityInfo div.greenville {
-        margin: 20px 20px 20px 20px;
-}
-
- #cities {
-        display: flex;
-        flex-direction:row wrap;
-    }
-
-   /*---------WEATHER SUMMARY--------*/
+        /*---------WEATHER SUMMARY--------*/
     #summary {
         display: flex;
         flex-direction: row;
