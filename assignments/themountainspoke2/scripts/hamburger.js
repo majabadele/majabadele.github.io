@@ -1,3 +1,7 @@
-function toggleNavMenu() {
-    document.getElementById("primaryNav").classList.toggle("hide");
-}
+$(document).ready(function(){
+    
+  $(".burger-nav").on("click", function(){  
+    
+      $("nav ul").toggleClass("open");
+    });
+});
