@@ -3,6 +3,8 @@ body {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
+    min-width: 400px;
+    background-color: skyblue;
 }
 
 header {
@@ -37,36 +39,35 @@ main figure {
 
 /* Nav CSS*/
 
-nav {
-    background: #FF7700;
-    clear: left;
-    font-family: 'Rubik', sans-serif;
+nav { background: #FF7700;
+      clear: left;
+     font-family: 'Rubik', sans-serif; 
+       
 }
 
+nav ul { list-style-type: none;
+         
+         margin: 0;
+         list-style-type: none;
+         overflow: hidden;
+         background-color: #FF7700;
+         height: 0;
+        
+              
+} 
+    
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    list-style-type: none;
-    overflow: hidden;
-    background-color: #FF7700;
-    height: 0;
-}
+nav li {border: 1px solid #fff;
+       
+       }
 
 
-nav li {
-    border: 1px solid #fff;
-
-}
-
-
-nav a {
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-
+nav a{ text-decoration: none;
+       text-align: center;
+       color: #fff;
+       padding: 10px;
+       display: flex;
+          
 }
 
 
@@ -76,28 +77,28 @@ nav ul li.active a {
 
 }
 
-nav ul li a:hover {
-    background-color: #80E8FF;
+nav ul li a:hover {background-color: #80E8FF;
     color: #4d004d;
 
 }
 
 
-.burger-nav {
-    display: flex;
-    justify-content: flex-end;
-    height: 30px;
-    width: 100%;
-    background: #FF7700 url("burger.png") no-repeat 98% center;
-    cursor: pointer;
-    padding: 0;
+
+.burger-nav {display: flex;
+             justify-content: flex-end;
+            height: 30px; 
+            width: 100%;
+            background: #FF7700 url("burger.png") no-repeat 98% center; 
+            cursor: pointer;
+            padding: 0;
 
 }
-
-
+              
+            
 nav ul.open {
-    height: auto;
-    padding-left: 0;
+        height:auto;
+    padding-left: 0;}
+
 }
 
 /* Header CSS*/

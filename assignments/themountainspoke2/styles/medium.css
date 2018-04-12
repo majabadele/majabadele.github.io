@@ -1,154 +1,151 @@
 @media only screen and (min-width: 37.5em) {
-    
-    header h1 { font-size: 40px;}    
-    
-    
 
-
-
-header img { max-width: 150px;}
-
-header { height: 150px;}
-
-header .subheading { font-size: 25px;}
-
-.headerPic {
-        
-            margin-left: auto;
-            margin-right: auto;
-            max-width: 100%;
-
-}
-
-body { border: 1px;}
-
-
-  .burger-nav { display:none; } 
-    
-
-    
-    
-     nav ul { height: 10%;
-             display: flex;
-             
-             padding-left: 0;
-             
+    header h1 {
+        font-size: 40px;
     }
-    
-    nav ul { 
-             display: flex;
-             justify-content: flex-start;
-            
-            
-            
-            
-               
-    }
-        
-     nav li  { flex: 1 1 0;
-               padding: 2px;
-                
-               
-    
-    }
-    
-    
-#booknow, #navigate {display: none;}
 
 
-#booknow2 {display: block; 
-           float: right;
-            padding: 10px;
-            padding-left: 15px;
-            padding-right: 15px;
-         
-         font-size: 1em;
-          border-radius: 8px;
-          background-color:#B25400;
-          color: white;
-          font-weight: bold;
 
-}
-    
-    
-    .imgsection { display: grid;
-                  grid-auto-columns: (2, 1fr);
-                  
-                 
+
+
+    header img {
+        max-width: 150px;
     }
-    
-#sec1 { max-width: 80%;
+
+    header {
+        height: 150px;
+    }
+
+    header .subheading {
+        font-size: 25px;
+    }
+
+    .headerPic {
+
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+
+    }
+
+    body {
+        border: 1px;
+    }
+
+    /*---------NAVIGATION-----------*/
+    /* hamburger button hidden */
+    .burger-nav {
+        display: none;
+    }
+
+
+
+
+    nav ul {
+        height: 10%;
+        display: flex;
+
+        padding-left: 0;
+
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-start;
+
+    }
+
+    nav li {
+        flex: 1 1 0;
+        padding: 2px;
+
+    }
+
+    .imgsection {
+        display: grid;
+        grid-auto-columns: (2, 1fr);
+    }
+
+    #sec1 {
+        max-width: 80%;
         grid-column: 1;
         grid-row: 1;
         justify-self: center;
-    
-    
-        
-}
-
-#sec2  { max-width: 80%;
-        grid-column: 2;
-        grid-row:1 ;
-        justify-self: center;
-}
-
-#sec3  { max-width: 80%;
-         justify-self: center;
-         grid-column: 1;
-        grid-row:2 ;
-        
-}
-
-
-#sec4  { max-width: 80%;
-        grid-column: 2;
-        grid-row:2 ;
-        justify-self: center;
-}
-    
-#sec5  { max-width: 80%;
-       grid-column: 1;
-       grid-row:3 ;
-       justify-self: center;
-    
-}
-
-    
-#sec6  { max-width: 80%;
-         grid-column: 2;
-         grid-row:3 ;
-         justify-self: center;
-
-}
-    
-    
-    #eventssection{
-         max-width: 100%;
-        
-        
-        
-        
-        
     }
-    #continental {max-width: 90%;
-        grid-column: 1;
-        grid-row:1 ;
-        justify-self: center;
-        
-        
-}
-           
-    #escape {max-width: 90%;
+
+    #sec2 {
+        max-width: 80%;
         grid-column: 2;
-        grid-row:1 ;
+        grid-row: 1;
         justify-self: center;
-}
-    
-    #contdivide {max-width: 95%;
-        
-    
-}
-    
-    #elevation { max-width: 95%;}
-           
+    }
+
+    #sec3 {
+        max-width: 80%;
+        justify-self: center;
+        grid-column: 1;
+        grid-row: 2;
+
+    }
+
+
+    #sec4 {
+        max-width: 80%;
+        grid-column: 2;
+        grid-row: 2;
+        justify-self: center;
+    }
+
+    #sec5 {
+        max-width: 80%;
+        grid-column: 1;
+        grid-row: 3;
+        justify-self: center;
+
+    }
+
+
+    #sec6 {
+        max-width: 80%;
+        grid-column: 2;
+        grid-row: 3;
+        justify-self: center;
+
+    }
+
+
+    #eventssection {
+        max-width: 100%;
+
+
+
+
+
+    }
+    #continental {
+        max-width: 90%;
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+
+
+    }
+
+    #escape {
+        max-width: 90%;
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+    }
+
+    #contdivide {
+        max-width: 95%;
+
+
+    }
+
+    #elevation {
+        max-width: 95%;
+    }
+
 }
