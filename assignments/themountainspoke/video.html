@@ -2,7 +2,6 @@
 <html lang="en-us">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>The Mountain Spoke</title>
@@ -18,16 +17,13 @@
     <!-- medium/tablet views -->
     <link href="styles/large.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script>
-        $(function() {
-            $("#accordion").accordion();
-        });
 
-    </script>
 
 </head>
 
@@ -39,52 +35,37 @@
 
         <h1>The Mountain Spoke</h1>
         <div class="subheading">Go wherever you want!</div>
+
     </header>
 
-
+    <!-- site navigation use placeholder references -->
     <nav>
         <a class="burger-nav"></a>
         <ul>
             <li class=""><a href="index.html">Home</a></li>
             <li class=""><a href="adventures.html">Adventures</a></li>
             <li class=""><a href="events.html">Events</a></li>
-            <li class=""><a href="shop.html">Shop</a></li>
+            <li class="active"><a href="shop.html">Shop</a></li>
             <li class=""><a href="service.html">Service</a></li>
             <li class=""><a href="contact.html">Contact Us</a></li>
         </ul>
+
     </nav>
 
-
-    <main>
-        <div class="address">
-            <p>Address: 3950 Valley Commons Drive
-                <br> Bozeman, MT 59718
-                <br> Phone: <a href="tel:+1-999-999-9999">(999)999-9999</a>
-                <br> Email: <a href="mailto:info@themountainspoke.com">info@themountainspoke.com</a>
-                <br>
-
-            </p>
-
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9487388340385!2d-111.09298062043241!3d45.67192937920627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x
-5345458559cf66a1%3A0x858c0351ba741919!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!
-1sen!2sus!4v1513444276061" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-        </div>
-    </main>
+    <embed width="420" height="315" src="https://www.youtube.com/v/8lnqqKvcHRA">
     <footer>
-        <aside>
-            <p>The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT 59718<br> contact@theurl.com <br> (999)999-9999
-            </p>
-            <p><a href="video.html">VIDEO REVIEW FOR FINAL PROJECT</a></p>
-        </aside>
-        <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke | <span id="currentdate">curentdate.js</span></p>
-    </footer>
+    <aside>
+        <p>The Mountain Spoke <br> 3950 Valley Commons Drive <br> Bozeman, MT 59718<br> contact@theurl.com <br> (999)999-9999
+        </p>
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke |
+        <p id="demo"></p>
 
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/currentdate.js"></script>
 
+        </footer>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
 
 </body>
 
