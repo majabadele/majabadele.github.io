@@ -17,17 +17,14 @@
     <!-- medium/tablet views -->
     <link href="styles/large.css" rel="stylesheet">
     <!-- large/wide/desktop views -->
+    
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
-    <script>
-        $(function() {
-            $("#accordion").accordion();
-        });
-
-    </script>
+   
 
 
 
@@ -144,8 +141,11 @@
         <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke |
             <span id="currentdate">curentdate.js</span></p>
     </footer>
-
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+     <script>
+        $(function() {
+            $("#accordion").accordion();
+        });
+    </script>
     <script src="scripts/currentdate.js"></script>
     <script src="scripts/hamburger.js"></script>
 
